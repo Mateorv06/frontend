@@ -1,0 +1,12 @@
+.div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mensaje {
+  font-style: italic;
+  color: #666666;
+  font-size: 15px;
+}

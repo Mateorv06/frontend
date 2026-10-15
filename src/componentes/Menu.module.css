@@ -1,0 +1,77 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1c1c28;
+  padding: 0.75rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.marca {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.marca:hover {
+  color: #c084fc;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.enlace {
+  display: inline-block;
+  color: #d1d1db;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.enlace:hover {
+  color: #ffffff;
+}
+
+.enlaceActivo {
+  color: #ffffff;
+  border-bottom: 2px solid #c084fc;
+}
+
+.botonCrear {
+  background-color: #7c3aed;
+  color: #ffffff;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  border-bottom: none;
+}
+
+.botonCrear:hover {
+  background-color: #6d28d9;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .lista {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
